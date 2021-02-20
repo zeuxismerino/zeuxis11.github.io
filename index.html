@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <template id="template-footer">
+        <th scope="row" colspan="2">Total productos</th>
+        <td>10</td>
+        <td>
+            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                vaciar todo
+            </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
+    
+    <template id="template-carrito">
+      <tr>
+        <th scope="row">id</th>
+        <td>Café</td>
+        <td>1</td>
+        <td>
+            <button class="btn btn-info btn-sm">
+                +
+            </button>
+            <button class="btn btn-danger btn-sm">
+                -
+            </button>
+        </td>
+        <td>$ <span>S/500</span></td>
+      </tr>
+    </template>
+  
+    <div id="canastaList"></div>
+    
+    <h1>articulos</h1>
+
+    <div class="gallery-cards" id="padre">
+        <article class="card">
+            <img class="card-img" src="https://seeklogo.com/images/H/html5-with-wordmark-color-logo-4259B7F24F-seeklogo.com.png" alt="">
+            <div class="card-caption">
+                <h4 class="card-name">HTML</h4>
+                <p>Diego Cueva</p>
+                <p class="card-precio">S/ 600</p>
+                <a href="#" class="card-btn">Comprar</a>
+            </div>
+        </article>
+        <article class="card" id="modelo01">
+            <img class="card-img" src="https://seeklogo.com/images/C/css-3-logo-AF06D75231-seeklogo.com.png" alt="">
+            <div class="card-caption">
+                <h4 class="card-name">CSS</h4>
+                <p>Diego Cueva</p>
+                <p class="card-precio">S/ 600</p>
+                <a href="#" class="card-btn">Comprar</a>
+            </div>
+        </article>
+        <article class="card">
+            <img class="card-img" src="https://img.freepik.com/foto-gratis/codigo-fuente-escritorio-papel-tapiz-lenguaje-computadora-codificacion-programacion_33771-595.jpg?size=626&ext=jpg" alt="">
+            <div class="card-caption">
+                <h4 class="card-name">FUNDAMENTOS PROGRAMACION</h4>
+                <p>Diego Cueva</p>
+                <p class="card-precio">S/ 600</p>
+                <a href="#" class="card-btn">Comprar</a>
+            </div>
+        </article>   
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
